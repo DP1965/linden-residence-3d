@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1390" viewBox="0 0 1520 1390">
+<style>*{font-family:Arial,Helvetica,sans-serif}.t{font-size:30px;font-weight:700;fill:#17283a}.s{font-size:15px;fill:#5d6d7e}.r{font-size:15px;font-weight:700;fill:#203447;text-anchor:middle}.d{font-size:13px;fill:#637588;text-anchor:middle}.dim{font-size:14px;fill:#43566b;text-anchor:middle}.wall{fill:#24394d}.glass{stroke:#2d94ad;stroke-width:6}.leaf{stroke:#8a5a35;stroke-width:3;fill:none}.arc{stroke:#b57a4d;stroke-width:1.5;fill:none;stroke-dasharray:4 3}</style>
+<rect width="1520" height="1390" fill="#f4f6f8"/>
+<text x="70" y="62" class="t">2BHK RESIDENCE: PLAN</text>
+<text x="70" y="90" class="s">99 m2 centre-line footprint, 11.0 x 9.0 m, ceiling 3.0 m. External walls 230 mm, internal walls 115 mm. North is up.</text>
+<rect x="150.0" y="650.0" width="760.0" height="440.0" fill="#eef2e8"/>
+<rect x="910.0" y="650.0" width="340.0" height="440.0" fill="#f7eee1"/>
+<rect x="150.0" y="530.0" width="1100.0" height="120.0" fill="#f1f1ee"/>
+<rect x="150.0" y="190.0" width="440.0" height="340.0" fill="#e8f0f6"/>
+<rect x="590.0" y="190.0" width="180.0" height="340.0" fill="#e8f0f0"/>
+<rect x="770.0" y="190.0" width="300.0" height="340.0" fill="#f2e9df"/>
+<rect x="1070.0" y="190.0" width="180.0" height="340.0" fill="#e8f0f0"/>
+<rect x="180.0" y="1101.5" width="520.0" height="148.5" fill="#e6e9ec" stroke="#8a97a3" stroke-width="2"/>
+<rect class="wall" x="138.5" y="1078.5" width="111.5" height="23.0"/>
+<rect class="wall" x="510.0" y="1078.5" width="40.0" height="23.0"/>
+<rect class="wall" x="670.0" y="1078.5" width="60.0" height="23.0"/>
+<rect class="wall" x="820.0" y="1078.5" width="230.0" height="23.0"/>
+<rect class="wall" x="1170.0" y="1078.5" width="91.5" height="23.0"/>
+<line class="glass" x1="250.0" y1="1086.0" x2="388.0" y2="1086.0"/>
+<line class="glass" x1="372.0" y1="1094.0" x2="510.0" y2="1094.0"/>
+<line class="glass" x1="550.0" y1="1090.0" x2="670.0" y2="1090.0"/>
+<line class="leaf" x1="820.0" y1="1090.0" x2="820.0" y2="1000.0"/>
+<path class="arc" d="M820.0 1000.0 A90.0 90.0 0 0 0 730.0 1090.0"/>
+<line class="glass" x1="1050.0" y1="1090.0" x2="1170.0" y2="1090.0"/>
+<rect class="wall" x="138.5" y="178.5" width="111.5" height="23.0"/>
+<rect class="wall" x="490.0" y="178.5" width="150.0" height="23.0"/>
+<rect class="wall" x="720.0" y="178.5" width="120.0" height="23.0"/>
+<rect class="wall" x="1000.0" y="178.5" width="140.0" height="23.0"/>
+<rect class="wall" x="1200.0" y="178.5" width="61.5" height="23.0"/>
+<line class="glass" x1="250.0" y1="190.0" x2="490.0" y2="190.0"/>
+<line class="glass" x1="640.0" y1="190.0" x2="720.0" y2="190.0"/>
+<line class="glass" x1="840.0" y1="190.0" x2="1000.0" y2="190.0"/>
+<line class="glass" x1="1140.0" y1="190.0" x2="1200.0" y2="190.0"/>
+<rect class="wall" x="138.5" y="970.0" width="23.0" height="131.5"/>
+<rect class="wall" x="138.5" y="450.0" width="23.0" height="320.0"/>
+<rect class="wall" x="138.5" y="178.5" width="23.0" height="131.5"/>
+<line class="glass" x1="150.0" y1="770.0" x2="150.0" y2="970.0"/>
+<line class="glass" x1="150.0" y1="310.0" x2="150.0" y2="450.0"/>
+<rect class="wall" x="1238.5" y="990.0" width="23.0" height="111.5"/>
+<rect class="wall" x="1238.5" y="178.5" width="23.0" height="651.5"/>
+<line class="glass" x1="1250.0" y1="830.0" x2="1250.0" y2="990.0"/>
+<rect class="wall" x="150.0" y="644.2" width="340.0" height="11.5"/>
+<rect class="wall" x="610.0" y="644.2" width="300.0" height="11.5"/>
+<rect class="wall" x="910.0" y="644.2" width="340.0" height="11.5"/>
+<rect class="wall" x="904.2" y="990.0" width="11.5" height="100.0"/>
+<rect class="wall" x="904.2" y="650.0" width="11.5" height="160.0"/>
+<rect class="wall" x="150.0" y="524.2" width="300.0" height="11.5"/>
+<rect class="wall" x="540.0" y="524.2" width="310.0" height="11.5"/>
+<rect class="wall" x="940.0" y="524.2" width="180.0" height="11.5"/>
+<rect class="wall" x="1200.0" y="524.2" width="50.0" height="11.5"/>
+<line class="leaf" x1="450.0" y1="530.0" x2="450.0" y2="440.0"/>
+<path class="arc" d="M450.0 440.0 A90.0 90.0 0 0 1 540.0 530.0"/>
+<line class="leaf" x1="940.0" y1="530.0" x2="940.0" y2="440.0"/>
+<path class="arc" d="M940.0 440.0 A90.0 90.0 0 0 0 850.0 530.0"/>
+<line class="leaf" x1="1200.0" y1="530.0" x2="1200.0" y2="450.0"/>
+<path class="arc" d="M1200.0 450.0 A80.0 80.0 0 0 0 1120.0 530.0"/>
+<rect class="wall" x="584.2" y="490.0" width="11.5" height="40.0"/>
+<rect class="wall" x="584.2" y="190.0" width="11.5" height="220.0"/>
+<line class="leaf" x1="590.0" y1="490.0" x2="670.0" y2="490.0"/>
+<path class="arc" d="M670.0 490.0 A80.0 80.0 0 0 0 590.0 410.0"/>
+<rect class="wall" x="764.2" y="190.0" width="11.5" height="340.0"/>
+<rect class="wall" x="1064.2" y="190.0" width="11.5" height="340.0"/>
+<rect class="wall" x="174.2" y="1238.5" width="531.5" height="11.5"/>
+<rect class="wall" x="174.2" y="1101.5" width="11.5" height="137.0"/>
+<rect class="wall" x="694.2" y="1101.5" width="11.5" height="137.0"/>
+<text class="r" x="530" y="866">LIVING + DINING</text><text class="d" x="530" y="885">7.4 x 4.2 m</text>
+<text class="r" x="1080" y="866">KITCHEN</text><text class="d" x="1080" y="885">3.2 x 4.2 m</text>
+<text class="r" x="700" y="595">PASSAGE  <tspan class="d" style="font-weight:400">10.8 x 1.1 m</tspan></text>
+<text class="r" x="370" y="356">MASTER BEDROOM</text><text class="d" x="370" y="375">4.2 x 3.2 m</text>
+<text class="r" x="680" y="356">MASTER BATH</text><text class="d" x="680" y="375">1.7 x 3.2 m</text>
+<text class="r" x="920" y="356">BEDROOM 2</text><text class="d" x="920" y="375">2.9 x 3.2 m</text>
+<text class="r" x="1160" y="356">COMMON BATH</text><text class="d" x="1160" y="375">1.6 x 3.2 m</text>
+<text class="r" x="440" y="1174">BALCONY</text><text class="d" x="440" y="1192">5.2 x 1.5 m</text>
+<path d="M150 136 V152 M1250 136 V152 M150 144 H1250" stroke="#768a9d" stroke-width="2" fill="none"/>
+<text class="dim" x="700" y="132">11.0 m (centre-lines)</text>
+<path d="M1300 190 H1316 M1300 1090 H1316 M1308 190 V1090" stroke="#768a9d" stroke-width="2" fill="none"/>
+<text class="dim" transform="rotate(90 1326 640)" x="1326" y="640">9.0 m</text>
+<text class="s" x="70" y="1316">Blue: windows  /  Brown arc: door swing  /  Dark: walls  /  Sizes are clear interior dimensions.</text>
+<text class="s" x="70" y="1340">Visualisation only: not a survey, blueprint or permit drawing.</text>
+<path d="M1430 110 l12 40 l-12 -9 l-12 9z" fill="#24394d"/><text class="dim" x="1430" y="170">N</text>
+</svg>

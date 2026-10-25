@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>2BHK Residence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,500..800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Concept: an architect's sheet for one house. Hairline dimension lines, a title block at the foot, the house's own faded brown. */
+:root {
+  --paper: #F1EEEA;
+  --paper-2: #E6E1DB;
+  --sheet: #FAF8F5;
+  --ink: #231C18;
+  --ink-soft: #5C504A;
+  --line: #C2B8AF;
+  --brown: #8C6A57;
+  --brown-deep: #6B4E3F;
+  --oak: #B58A5E;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #16110E; --paper-2: #211A16; --ink: #F0E9E3; --ink-soft: #B3A79F; --line: #3A2F29;
+    --brown: #C49A83; --brown-deep: #D8B49F; --oak: #D2A67A; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #16110E; --paper-2: #211A16; --ink: #F0E9E3; --ink-soft: #B3A79F; --line: #3A2F29;
+  --brown: #C49A83; --brown-deep: #D8B49F; --oak: #D2A67A; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+}
+a { color: var(--brown-deep); text-underline-offset: 3px; }
+a:focus-visible, video:focus-visible { outline: 2px solid var(--brown); outline-offset: 3px; }
+.wrap { max-width: 1160px; margin-inline: auto; }
+.eyebrow { font: 500 0.75rem/1.4 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2.6rem, 8vw, 5.6rem); font-weight: 700; font-stretch: 118%; line-height: 0.98; }
+h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 650; font-stretch: 110%; line-height: 1.08; }
+h3 { font-size: 1.05rem; font-weight: 650; }
+p { margin: 0; max-width: 62ch; }
+
+.bar { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding-block: 1.1rem; border-bottom: 1px solid var(--line); }
+.bar nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.bar nav a { font: 500 0.78rem/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
+.bar nav a:hover { color: var(--ink); }
+
+.hero { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding-block: clamp(2rem, 6vw, 4.5rem) clamp(2rem, 5vw, 3.5rem); }
+.hero .lede { font-size: clamp(1.1rem, 2.2vw, 1.3rem); line-height: 1.5; margin-top: 1.5rem; }
+.dim { display: flex; align-items: center; gap: 0.7rem; margin-top: 2.2rem; font: 500 0.78rem/1 var(--mono); color: var(--ink-soft); }
+.dim i { flex: 1; height: 11px; border-inline: 1px solid var(--line); background: linear-gradient(var(--line), var(--line)) center / 100% 1px no-repeat; }
+.hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; background: var(--paper-2); }
+
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-block: 1px solid var(--line); margin: 0; }
+.facts div { padding: 1.15rem 1.25rem 1.2rem 0; }
+.facts div + div { padding-left: 1.25rem; border-left: 1px solid var(--line); }
+.facts dt { font: 500 0.72rem/1.3 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); }
+.facts dd { margin: 0.35rem 0 0; font: 650 1.45rem/1.15 var(--display); font-stretch: 108%; }
+.facts dd small { display: block; margin-top: 0.3rem; font: 400 0.82rem/1.35 var(--body); color: var(--ink-soft); }
+
+section { padding-block: clamp(2.8rem, 7vw, 5.2rem) 0; }
+.head { display: grid; grid-template-columns: minmax(0, 0.4fr) minmax(0, 1fr); gap: 1rem 3rem; margin-bottom: 2rem; align-items: start; }
+.head p { color: var(--ink-soft); }
+
+.plan-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); gap: 2rem; align-items: start; }
+.sheet { background: var(--sheet); border: 1px solid var(--line); padding: 0.6rem; }
+.sheet img { display: block; width: 100%; height: auto; }
+.sheet-note { margin-top: 0.6rem; font: 400 0.76rem/1.4 var(--mono); color: var(--ink-soft); }
+table { width: 100%; border-collapse: collapse; font-size: 0.98rem; }
+caption { text-align: left; padding-bottom: 0.6rem; }
+th, td { text-align: left; padding: 0.6rem 0; border-top: 1px solid var(--line); vertical-align: baseline; }
+th { font-weight: 500; }
+td { font: 500 0.9rem/1.35 var(--mono); text-align: right; white-space: nowrap; padding-left: 0.8rem; }
+tr:last-child th, tr:last-child td { border-bottom: 1px solid var(--line); }
+
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.grid figure { margin: 0; }
+.grid .wide { grid-column: 1 / -1; }
+.grid img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: var(--paper-2); }
+.grid figcaption { display: flex; justify-content: space-between; gap: 1rem; padding-top: 0.6rem; font: 400 0.78rem/1.4 var(--mono); color: var(--ink-soft); }
+.grid figcaption b { font-weight: 500; color: var(--ink); }
+.grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.method { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.method li { padding: 1rem 1rem 0 0; }
+.method li + li { padding-left: 1rem; border-left: 1px solid var(--line); }
+.method .n { font: 500 0.72rem/1.3 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--brown-deep); }
+.method h3 { margin-top: 0.4rem; }
+.method p { margin-top: 0.45rem; font-size: 0.92rem; line-height: 1.5; color: var(--ink-soft); }
+
+footer { margin-top: clamp(3rem, 7vw, 5.5rem); padding-bottom: 2.5rem; }
+.block { display: grid; grid-template-columns: 1.4fr 1fr 1fr; border: 1px solid var(--ink-soft); }
+.block > div { padding: 0.9rem 1.1rem; }
+.block > div + div { border-left: 1px solid var(--ink-soft); }
+.block small { display: block; font: 500 0.68rem/1.3 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); }
+.block strong { display: block; margin-top: 0.25rem; font: 650 1.05rem/1.25 var(--display); font-stretch: 108%; }
+.block span { display: block; margin-top: 0.25rem; font-size: 0.86rem; line-height: 1.45; color: var(--ink-soft); }
+
+@media (max-width: 860px) {
+  .hero, .plan-grid, .head { grid-template-columns: minmax(0, 1fr); }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facts div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .facts div:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .method { grid-template-columns: minmax(0, 1fr); }
+  .method li, .method li + li { padding: 1rem 0; border-left: 0; border-bottom: 1px solid var(--line); }
+  .grid, .grid.three { grid-template-columns: minmax(0, 1fr); }
+  .block { grid-template-columns: minmax(0, 1fr); }
+  .block > div + div { border-left: 0; border-top: 1px solid var(--ink-soft); }
+  .bar nav { display: none; }
+}
+.film { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 2rem; align-items: start; }
+.film video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; background: var(--line); border: 1px solid var(--ink-soft); }
+.film-wide { margin-bottom: 2rem; }
+.film-wide video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--line); border: 1px solid var(--ink-soft); }
+.film-wide p { margin-top: 0.7rem; font: 400 0.78rem/1.4 var(--mono); color: var(--ink-soft); }
+.film h3 { font: 650 1.25rem/1.2 var(--display); font-stretch: 108%; margin: 0 0 0.5rem; }
+.film p { max-width: 52ch; line-height: 1.55; color: var(--ink-soft); }
+@media (max-width: 860px) { .film { grid-template-columns: minmax(0, 1fr); } .film video { max-width: 340px; } }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <span class="eyebrow">Two bedrooms · North up</span>
+    <nav aria-label="Sections">
+      <a href="#plan">Plan</a><a href="#outside">Outside</a><a href="#above">From above</a><a href="#film">Film</a><a href="../" >3D tour</a><a href="#inside">Inside</a><a href="#method">How it is made</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Single storey · 11.0 × 9.0 m</p>
+        <h1 style="margin-top:1rem">2BHK Residence</h1>
+        <p class="lede">A single-storey two-bedroom home in faded brown render, with an open living and dining room, a kitchen of its own, a quiet bedroom wing and a balcony off the living room.</p>
+        <div class="dim" aria-hidden="true"><span>0</span><i></i><span>11.0 m</span></div>
+      </div>
+      <img src="assets/E1_front_southeast.jpg" alt="The house from the south-east: faded brown walls, a flat roof, a front door with a path, and a balcony at the left" width="1920" height="1080">
+    </div>
+
+    <dl class="facts">
+      <div><dt>Footprint</dt><dd>99 m²<small>11.0 × 9.0 m on the wall centre-lines</small></dd></div>
+      <div><dt>Bedrooms</dt><dd>2<small>master with its own bath</small></dd></div>
+      <div><dt>Bathrooms</dt><dd>2<small>master bath and common bath</small></dd></div>
+      <div><dt>Ceiling</dt><dd>3.0 m<small>walls 230 mm outside, 115 mm inside</small></dd></div>
+    </dl>
+
+    <section id="plan">
+      <div class="head">
+        <div><p class="eyebrow">The plan</p><h2 style="margin-top:0.6rem">Public rooms south, bedrooms north</h2></div>
+        <p>The front half holds the living and dining room and the kitchen. A passage runs across the middle, and the two bedrooms and two bathrooms sit behind it. Every window, door and opening below is where the images show it.</p>
+      </div>
+      <div class="plan-grid">
+        <div>
+          <div class="sheet"><img src="assets/plan.svg" alt="Floor plan: living and dining and kitchen in the south, a passage across the middle, master bedroom with bath, bedroom 2 and a common bath in the north, a balcony off the living room" width="1520" height="1390"></div>
+          <p class="sheet-note">Sizes are clear interior dimensions. <a href="assets/plan.svg" target="_blank" rel="noopener">Open the plan full size</a></p>
+        </div>
+        <div>
+          <table>
+            <caption class="eyebrow">Rooms, clear interior size</caption>
+            <tbody>
+              <tr><th scope="row">Living + dining</th><td>7.4 × 4.2 m</td></tr>
+              <tr><th scope="row">Kitchen</th><td>3.2 × 4.2 m</td></tr>
+              <tr><th scope="row">Passage</th><td>10.8 × 1.1 m</td></tr>
+              <tr><th scope="row">Master bedroom</th><td>4.2 × 3.2 m</td></tr>
+              <tr><th scope="row">Master bath</th><td>1.7 × 3.2 m</td></tr>
+              <tr><th scope="row">Bedroom 2</th><td>2.9 × 3.2 m</td></tr>
+              <tr><th scope="row">Common bath</th><td>1.6 × 3.2 m</td></tr>
+              <tr><th scope="row">Balcony</th><td>5.2 × 1.5 m</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="outside">
+      <div class="head">
+        <div><p class="eyebrow">Outside</p><h2 style="margin-top:0.6rem">Faded brown, flat roof, a garden edge</h2></div>
+        <p>A muted brown render over a darker plinth, slim aluminium windows, a timber front door and a balcony with a solid parapet. Ferns and potted plants soften the base.</p>
+      </div>
+      <div class="grid">
+        <figure class="wide"><img src="assets/E2_front_south.jpg" alt="Front elevation from the south with the balcony, the entry path and the kitchen window" loading="lazy"><figcaption><b>Front, south</b><span>1920 × 1080 · Cycles</span></figcaption></figure>
+        <figure><img src="assets/E3_front_southwest.jpg" alt="The house from the south-west showing the balcony and the west windows" loading="lazy"><figcaption><b>South-west</b><span>balcony and west windows</span></figcaption></figure>
+        <figure><img src="assets/E4_rear_northeast.jpg" alt="The rear of the house from the north-east with the bedroom and bathroom windows" loading="lazy"><figcaption><b>North-east, rear</b><span>bedroom wing</span></figcaption></figure>
+        <figure><img src="assets/E5_rear_northwest.jpg" alt="The house from the north-west" loading="lazy"><figcaption><b>North-west</b><span>rear and west side</span></figcaption></figure>
+        <figure><img src="assets/E6_entry_closeup.jpg" alt="Close-up of the front door, the step and a potted plant" loading="lazy"><figcaption><b>Entry</b><span>door, step, planter</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="above">
+      <div class="head">
+        <div><p class="eyebrow">From above</p><h2 style="margin-top:0.6rem">Every room at once</h2></div>
+        <p>Roof and ceilings are removed in these three views so the furniture and the circulation read clearly.</p>
+      </div>
+      <div class="grid">
+        <figure class="wide"><img src="assets/T1_top_down.jpg" alt="Top-down view of every room furnished, with the balcony at the bottom" loading="lazy"><figcaption><b>Top-down</b><span>roof and ceilings removed</span></figcaption></figure>
+        <figure><img src="assets/T2_cutaway_southeast.jpg" alt="Cut-away from the south-east" loading="lazy"><figcaption><b>Cut-away, south-east</b><span>living, kitchen and bedroom wing</span></figcaption></figure>
+        <figure><img src="assets/T3_cutaway_northwest.jpg" alt="Cut-away from the north-west" loading="lazy"><figcaption><b>Cut-away, north-west</b><span>bedrooms, passage, living</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="film">
+      <div class="head">
+        <div><p class="eyebrow">Film</p><h2 style="margin-top:0.6rem">Walk in, then watch it rise</h2></div>
+        <p>A 12-second eye-level walkthrough from the living room to the master bedroom, and an 18-second vertical animation: the plan draws on flat, the walls rise, the floors fill with room names and sizes, the furniture drops in and the camera pulls back to hold on the whole house.</p>
+      </div>
+      <figure class="film-wide" style="margin-inline:0">
+        <video controls playsinline preload="metadata" poster="assets/walkthrough_poster.jpg" aria-label="Eye-level walkthrough from the living room through the passage to the master bedroom"><source src="assets/walkthrough.mp4" type="video/mp4"></video>
+        <p>Walkthrough · 1920 × 1080 · 30 fps · eye level 1.5 m, 24 mm lens · Cycles</p>
+      </figure>
+      <div class="film">
+        <video controls playsinline preload="metadata" poster="assets/motion_poster.jpg" aria-label="Animated build-up of the house from flat plan to furnished 3D model"><source src="assets/motion_graphic.mp4" type="video/mp4"></video>
+        <div><h3>Motion graphic</h3><p>1080 × 1920 at 30 fps, 540 frames. Room labels use the clear interior sizes from the plan.</p><h3 style="margin-top:1.6rem">Walk it yourself</h3><p>The interactive 3D tour enters at the front door, passes through every room and labels the items in each. <a href="../">Open the 3D tour</a></p></div>
+      </div>
+    </section>
+
+    <section id="inside">
+      <div class="head">
+        <div><p class="eyebrow">Inside</p><h2 style="margin-top:0.6rem">Light oak, stone and soft daylight</h2></div>
+        <p>Light oak flooring in the living areas, passage and bedrooms; neutral stone in the kitchen, bathrooms and balcony; plastered walls. Sun, sky and glass are lit physically, with ceiling downlights and bedside lamps for the evening.</p>
+      </div>
+      <div class="grid">
+        <figure class="wide"><img src="assets/I01_living_from_entry.jpg" alt="Living room from the entry: sofa, round coffee table, leather lounge chair, wall-mounted TV and curtained window" loading="lazy"><figcaption><b>Living room</b><span>from the entry</span></figcaption></figure>
+        <figure><img src="assets/I02_living_to_balcony.jpg" alt="Living room looking toward the balcony sliding door" loading="lazy"><figcaption><b>Living room</b><span>toward the balcony</span></figcaption></figure>
+        <figure><img src="assets/I03_dining_kitchen.jpg" alt="Dining table and chairs with the kitchen visible through the wide opening" loading="lazy"><figcaption><b>Dining</b><span>kitchen beyond</span></figcaption></figure>
+        <figure><img src="assets/I04_kitchen_south.jpg" alt="Kitchen with oak-veneer cabinets, quartz worktop, hood and a window over the sink" loading="lazy"><figcaption><b>Kitchen</b><span>hob run and window</span></figcaption></figure>
+        <figure><img src="assets/I05_kitchen_north.jpg" alt="Kitchen seen from the south-east corner with the dining room beyond" loading="lazy"><figcaption><b>Kitchen</b><span>looking back to dining</span></figcaption></figure>
+        <figure><img src="assets/I06_master_from_door.jpg" alt="Master bedroom with a double bed under a wide window and sheer curtains" loading="lazy"><figcaption><b>Master bedroom</b><span>from the door</span></figcaption></figure>
+        <figure><img src="assets/I07_master_from_corner.jpg" alt="Master bedroom wardrobe and bed from the north-east corner" loading="lazy"><figcaption><b>Master bedroom</b><span>wardrobe wall</span></figcaption></figure>
+        <figure><img src="assets/I08_bedroom2.jpg" alt="Bedroom 2 with a double bed, bedside lamp and a window" loading="lazy"><figcaption><b>Bedroom 2</b><span>bed and window</span></figcaption></figure>
+        <figure><img src="assets/I09_master_bath.jpg" alt="Master bathroom with a glass-screened shower and a toilet" loading="lazy"><figcaption><b>Master bath</b><span>shower and WC</span></figcaption></figure>
+        <figure><img src="assets/I10_common_bath.jpg" alt="Common bathroom with shower, vessel basin and mirror" loading="lazy"><figcaption><b>Common bath</b><span>shower and vanity</span></figcaption></figure>
+        <figure><img src="assets/I11_passage.jpg" alt="The passage with doors to the bedrooms and bathrooms" loading="lazy"><figcaption><b>Passage</b><span>bedroom wing</span></figcaption></figure>
+        <figure class="wide"><img src="assets/I12_balcony.jpg" alt="Balcony with a bistro table, two chairs, plants and the garden beyond" loading="lazy"><figcaption><b>Balcony</b><span>off the living room</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section id="method">
+      <div class="head">
+        <div><p class="eyebrow">How it is made</p><h2 style="margin-top:0.6rem">Plan first, finish last</h2></div>
+        <p>The house is modelled in Blender from one set of plan data, so the drawing, the model and the checks always agree. Textures, sky and a handful of accent models are free CC0 assets from Poly Haven. The rest is built in code.</p>
+      </div>
+      <ol class="method">
+        <li><span class="n">Plan</span><h3>One source of truth</h3><p>Rooms, walls and openings in a single file feed the drawing and the 3D model.</p></li>
+        <li><span class="n">Structure</span><h3>Walls and openings</h3><p>Butt-jointed walls, floors, doors, windows and the balcony, checked against the plan.</p></li>
+        <li><span class="n">Furnish</span><h3>Finishes and furniture</h3><p>Real textures, furniture kept clear of doors and walking routes, daylight and downlights.</p></li>
+        <li><span class="n">Shots</span><h3>21 views</h3><p>Exterior, top-down, cut-away and every room, rendered in Cycles.</p></li>
+        <li><span class="n">Film</span><h3>Walkthrough</h3><p>One eased move at eye level from the entry to the master bedroom.</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="block">
+      <div><small>Project</small><strong>2BHK Residence</strong><span>Single-storey two-bedroom house, north up.</span></div>
+      <div><small>Footprint</small><strong>11.0 × 9.0 m</strong><span>Wall centre-lines. Ceiling 3.0 m.</span></div>
+      <div><small>Status</small><strong>Visualisation</strong><span>Not a survey, blueprint or permit drawing. Check structure, services and local requirements before construction.</span></div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
